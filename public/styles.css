@@ -1,0 +1,23 @@
+/*
+Sources:
+Typed Arithmetic [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units/Using_typed_arithmetic]
+ */
+:root {
+    --index-size: 25px;;
+}
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    margin-left: var(--index-size);
+}
+h4 {
+    font-style: italic;
+    font-weight: lighter;
+    margin-left: calc(var(--index-size)*2);
+}
+
+.bodyText{
+    margin-left: calc(var(--index-size)*3);
+}
