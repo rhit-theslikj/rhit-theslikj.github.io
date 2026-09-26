@@ -1,12 +1,13 @@
-/*
-Sources:
-Typed Arithmetic [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units/Using_typed_arithmetic]
- */
 :root {
     --index-size: 25px;;
 }
 h1 {
     font-size: 3em;
+}
+
+h2 {
+    background-color: rgb(221, 196, 245);
+    padding: 10px;
 }
 
 h3 {
@@ -20,4 +21,41 @@ h4 {
 
 .bodyText{
     margin-left: calc(var(--index-size)*3);
+}
+
+.navigation {
+    background-color: rgb(56, 27, 73);
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgb(190, 159, 196);
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+}
+
+.dropdown {
+    display:none;
+}
+
+.dropdownReveal {
+    display:block;
 }

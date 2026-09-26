@@ -5,6 +5,11 @@
         <title>Resume</title>
         <link rel="stylesheet" href="public/styles.css">
 	</head>
+    <div id="nav"><script>
+        fetch("nav.html").then(response => response.text()).then(html => {
+            document.getElementById("nav").innerHTML = html;
+        });
+    </script></div>
     <body>
         <h1>Resume</h1>
         <h2>Technologies</h2>
@@ -56,4 +61,9 @@
                     </ul>
                 </p>
     </body>
+    <div id="footer"><script>
+        fetch("footer.html").then(response => response.text()).then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script></div>
 </html>

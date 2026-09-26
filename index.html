@@ -1,3 +1,8 @@
+<!-- Citations:
+    Typed Arithmetic: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units/Using_typed_arithmetic
+    Header and footer without code duplication: https://www.w3schools.com/W3CSS/w3css_code_reuse.asp
+    Dropdown functionality: https://www.w3schools.com/howto/howto_js_dropdown.asp
+  -->
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,6 +10,11 @@
         <title>Main</title>
         <link rel="stylesheet" href="public/styles.css">
 	</head>
+    <div id="nav"><script>
+        fetch("nav.html").then(response => response.text()).then(html => {
+            document.getElementById("nav").innerHTML = html;
+        });
+    </script></div>
     <body>
         <h1>Katherine Thesling</h1>
         <img src="images/Photo.jpg" alt="Photo of Katherine" width="200px">
@@ -12,4 +22,9 @@
         <p>I’m Katherine, a sophomore (’29) computer science student at Rose-Hulman Institute of Technology in Indiana, and I’m looking to become a software engineer. I’m also minoring in cybersecurity and mathematics.</p>
         <p>I am interested in all the ways computer science can be applied, especially data science, mathematics, AI, and cybersecurity. I was introduced to computer science through programming video games, which has since become a hobby along with art and storytelling.</p>
     </body>
+    <div id="footer"><script>
+        fetch("footer.html").then(response => response.text()).then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script></div>
 </html>
